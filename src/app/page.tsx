@@ -8,8 +8,11 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className='mx-auto max-w-7xl'>
+      <main>
+        <section className='mx-auto max-w-7xl'>
+          <Hero />
 
+        </section>
         <Image
           src={"/hero-background.png"}
           alt="Background"
@@ -18,7 +21,6 @@ const Home = () => {
           height={1080}
         />
         <div className='absolute inset-0 bg-gradient-to-b from-black/[0.9] from-10% via-black/30 to-black to-95% -z-9'></div>
-        <Hero />
         <MovieCards />
       </main>
     </>
