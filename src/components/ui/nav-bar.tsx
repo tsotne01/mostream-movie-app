@@ -4,7 +4,7 @@ import NavBarLink from './nav-bar-link'
 
 const NavBar = () => {
   return (
-    <nav className='px-28 '>
+    <nav className='md:px-10 lg:px-20 '>
         <ul className='gap-8 hidden md:flex'>
             <li>
                 <NavBarLink href={"/"}>Home</NavBarLink>

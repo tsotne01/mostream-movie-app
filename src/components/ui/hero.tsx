@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from './button'
+import MovieCards from './movie-cards'
+import MovieCard from './movie-card'
 
 const Hero = () => {
     return (
@@ -10,7 +12,7 @@ const Hero = () => {
             <p className='text-center mx-auto mt-6 text-lg text-gray-300 max-w-4xl'>
                 Against the backdrop of a dying Earth, a group of scientists races to execute a daring plan to synchronize the consciousness of humanity with a new solar system. "Solaris Synchrony" is a gripping
             </p>
-            <div className='mx-auto w-fit flex gap-2'>
+            <div className='mx-auto mb-20 w-fit flex gap-2'>
                     <Button
                         variant='primary'
                         className='mt-8 inline-block'
