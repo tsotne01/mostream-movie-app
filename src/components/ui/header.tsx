@@ -5,7 +5,7 @@ import HeaderCTA from './header-cta'
 
 const Header = () => {
     return (
-        <header className='flex items-center justify-between py-10 bg-transparent text-white mx-auto max-w-7xl'>
+        <header className='flex items-center justify-between mx-6 sm:mx-auto py-10 bg-transparent text-white max-w-7xl'>
             <Logo />
             <NavBar />
             <HeaderCTA />
