@@ -1,6 +1,7 @@
 import Header from '@/components/ui/header'
 import Hero from '@/components/ui/hero'
 import MovieCards from '@/components/ui/movie-cards'
+import MovieCategories from '@/components/ui/movie-categories'
 import Image from 'next/image'
 import React from 'react'
 
@@ -22,6 +23,8 @@ const Home = () => {
         />
         <div className='absolute inset-0 bg-gradient-to-b from-black/[0.9] from-10% via-black/30 to-black to-95% -z-9'></div>
         <MovieCards />
+
+        <MovieCategories />
       </main>
     </>
   )
