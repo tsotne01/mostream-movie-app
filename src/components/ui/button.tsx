@@ -14,13 +14,14 @@ type ButtonProps = {
     className?: string,
     isActive?: boolean,
     disabled?: boolean,
+    onClick?: React.MouseEventHandler<HTMLButtonElement>,
     type?: 'button' | 'submit' | 'reset',
     rest?: React.ButtonHTMLAttributes<HTMLButtonElement>
 }
 
-const Button = ({ variant,type, children, className, beforeIcon, afterIcon,isActive,...rest }: ButtonProps) => {
+const Button = ({ variant,type, children,onClick, className, beforeIcon, afterIcon,isActive,...rest }: ButtonProps) => {
     return (
-        <button className={`disabled:bg-slate-500/40 ${styles[variant]} ${className} ${isActive && variant == 'secondary' && 'bg-[#242323] border-1 border-[#383838]'}`} type={type} {...rest}>
+        <button onClick={onClick} className={`disabled:bg-slate-500/40 ${styles[variant]} ${className} ${isActive && variant == 'secondary' && 'bg-[#242323] border-1 border-[#383838]'}`} type={type} {...rest}>
             {beforeIcon && <span className="mr-2">{beforeIcon}</span>}
             {children}
             {afterIcon && <span className="ml-2">{afterIcon}</span>}
