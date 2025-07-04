@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import ErrorMessage from './error-message'
 
 
 const RegistrationSchema = z.object({
@@ -57,7 +56,7 @@ const RegistrationForm = () => {
                 <Button type="submit" variant="primary" disabled={false}>Register</Button>
                 <Button type="button" variant="secondary" className='border-1 border-[#383838] mb-8' beforeIcon={<>G</>}>Register with Google</Button>
                 <span className='text-center'>Already have an account?
-                    <Link href="/login" className='text-[#F14141]'> Sign In</Link>
+                    <Link href="/login" className='text-[#F14141] hover:underline'> Sign In</Link>
                 </span>
             </form>
         </div>
