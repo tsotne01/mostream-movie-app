@@ -4,7 +4,7 @@ import CategoryCard from './category-card'
 
 const MovieCategories = () => {
     return (
-        <section className='py-20 bg-black backdrop-blur-md max-w-7xl mx-auto'>
+        <section className='py-20 bg-black backdrop-blur-md max-w-7xl mx-auto mb-32'>
             <h2 className='text-white text-5xl leading-14 mb-14 tracking-tight font-semibold text-center max-w-3xl mx-auto'>
                 Explore Our Wide Range of Movie Categories and Genres
             </h2>
