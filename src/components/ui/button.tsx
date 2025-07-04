@@ -13,11 +13,14 @@ type ButtonProps = {
     afterIcon?: React.ReactNode,
     className?: string,
     isActive?: boolean,
+    disabled?: boolean,
+    type?: 'button' | 'submit' | 'reset',
+    rest?: React.ButtonHTMLAttributes<HTMLButtonElement>
 }
 
-const Button = ({ variant, children, className, beforeIcon, afterIcon,isActive }: ButtonProps) => {
+const Button = ({ variant,type, children, className, beforeIcon, afterIcon,isActive,...rest }: ButtonProps) => {
     return (
-        <button className={`btn ${styles[variant]} ${className} ${isActive && variant == 'secondary' && 'bg-[#242323] border-1 border-[#383838]'}`} type="button">
+        <button className={`disabled:bg-slate-500/40 ${styles[variant]} ${className} ${isActive && variant == 'secondary' && 'bg-[#242323] border-1 border-[#383838]'}`} type={type} {...rest}>
             {beforeIcon && <span className="mr-2">{beforeIcon}</span>}
             {children}
             {afterIcon && <span className="ml-2">{afterIcon}</span>}
