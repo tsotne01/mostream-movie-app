@@ -6,7 +6,7 @@ import React from 'react'
 
 const page = () => {
     return (
-        <main className='flex items-center justify-between max-w-7xl mx-auto'>
+        <main className='flex items-center justify-between gap-24 max-w-7xl mx-auto'>
             <div>
                 <div className='max-w-xl mb-8'>
                     <Logo className='mb-8 inline-block' />
@@ -17,15 +17,14 @@ const page = () => {
                     <RegistrationForm />
                 </div>
             </div>
-            <div>
-                <Image
-                    src="/registration-image.png"
-                    alt="logo"
-                    width={720}
-                    height={1024}
-                    className="h-full object-contain"
-                />
-            </div>
+
+            <Image
+                src="/registration-image.png"
+                alt="logo"
+                width={720}
+                height={1024}
+                className="h-full object-contain"
+            />
         </main>
     )
 }
