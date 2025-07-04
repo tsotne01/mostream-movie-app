@@ -1,4 +1,5 @@
 import React from 'react'
+import ErrorMessage from './error-message';
 
 
 type InputFieldProps = {
@@ -13,10 +14,11 @@ type InputFieldProps = {
     className?: string;
     disabled?: boolean;
     rest?: React.InputHTMLAttributes<HTMLInputElement>;
+    error?: string;
 }
 
 
-const InputField = ({ id, label, name, type = "text", required, placeholder, value, onChange, className, disabled, ...rest }: InputFieldProps) => {
+const InputField = ({ id, label, name, error, type = "text", required, placeholder, value, onChange, className, disabled, ...rest }: InputFieldProps) => {
     return (
         <div className='flex flex-col gap-3 shadow-sm'>
             <label className='text-base font-medium leading-6' htmlFor={id}>{label} {required && <span className='text-red-500'>*</span>}</label>
@@ -31,6 +33,7 @@ const InputField = ({ id, label, name, type = "text", required, placeholder, val
                 className={`border-1 border-[#383838] rounded-md text-[#878787] bg-[#101010] leading-6 font-medium text-base p-4 w-full ${className}`}
                 {...rest}
             />
+            <ErrorMessage message={error} />
         </div>
     )
 }
