@@ -16,7 +16,7 @@ const RegistrationSchema = z.object({
 });
 
 const RegistrationForm = () => {
-    const {register, handleSubmit, formState: { errors } } = useForm({
+    const {register, handleSubmit, formState: { errors ,isSubmitting} } = useForm({
         mode: 'onBlur',
         defaultValues: {
             username: '',
@@ -55,7 +55,7 @@ const RegistrationForm = () => {
                     error={errors.password?.message}
                     {...register("password", { required: true })}
                 />
-                <Button type="submit" variant="primary" disabled={false}>Register</Button>
+                <Button type="submit" variant="primary" disabled={isSubmitting}>Register</Button>
                 <Button type="button" variant="secondary" className='border-1 border-[#383838] mb-8' beforeIcon={<>G</>}>Register with Google</Button>
                 <span className='text-center'>Already have an account?
                     <Link href="/login" className='text-[#F14141]'> Sign In</Link>

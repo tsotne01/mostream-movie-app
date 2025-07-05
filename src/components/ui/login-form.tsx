@@ -13,7 +13,7 @@ const LoginSchema = z.object({
 });
 
 const LoginForm = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({
         resolver: zodResolver(LoginSchema),
         mode: 'onBlur',
         defaultValues: {
@@ -43,7 +43,7 @@ const LoginForm = () => {
                     placeholder='Input Password'
                     error={errors.password?.message}
                 />
-                <Button type='submit' variant='primary' disabled={false}>Sign In</Button>
+                <Button type='submit' variant='primary' disabled={isSubmitting}>Sign In</Button>
                 <Button type='button' variant='secondary' className='border-1 border-[#383838] mb-8' beforeIcon={<>G</>}>Sign In with Google</Button>
                 <span className='text-center'>Don't have an account?
                     <Link href="/register" className='text-[#F14141]'> Sign Up</Link>
