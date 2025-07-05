@@ -17,6 +17,7 @@ const RegistrationSchema = z.object({
 
 const RegistrationForm = () => {
     const {register, handleSubmit, formState: { errors } } = useForm({
+        mode: 'onBlur',
         defaultValues: {
             username: '',
             email: '',
