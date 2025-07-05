@@ -1,14 +1,24 @@
 import Image from 'next/image'
 import React from 'react'
 
-const MovieCard = () => {
+type MovieCardProps = {
+    title: string;
+    isActive: boolean;
+    image: string;
+    onClick: () => void;
+}
+
+const MovieCard = ({ title, isActive, image, onClick }: MovieCardProps) => {
     return (
-        <button className='relative min-w-fit cursor-pointer'>
-            <Image className='rounded-sm' src={"/hero-background.png"} alt='hero background' width={286} height={250} />
-            <h3 className='text-center absolute bottom-3 left-1/2 transform -translate-x-1/2 text-2xl text-nowrap tracking-tight leading-6 font-semibold'>
-                The Celestial Chiper
-            </h3>
-        </button>
+        <>
+            <button className={`relative min-w-fit cursor-pointer rounded-sm ${isActive ? 'border-2 border-white' : 'opacity-50 border-2 border-transparent'}`} onClick={onClick}>
+                <Image className='rounded-sm' src={image} alt='hero background' width={286} height={250} />
+                <h3 className={`text-center absolute bottom-3 left-1/2 transform -translate-x-1/2 text-2xl text-nowrap tracking-tight leading-6 font-semibold ${isActive ? '' : 'opacity-80'}`}>
+                    {title}
+                </h3>
+
+            </button>
+        </>
     )
 }
 
