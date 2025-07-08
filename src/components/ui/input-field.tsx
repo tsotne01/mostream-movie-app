@@ -16,10 +16,11 @@ type InputFieldProps = {
 }
 
 
-const InputField = ({ id, label, name, error, type = "text", placeholder, onChange, className, disabled, ...rest }: InputFieldProps) => {
+const InputField = ({ id, label, name, error, type = "text", placeholder, onChange, className, disabled, noLabel, ...rest }: InputFieldProps) => {
     return (
         <div className='flex flex-col gap-3 shadow-sm'>
-            <label className='text-base font-medium leading-6' htmlFor={id}>{label} <span className='text-red-500'>*</span></label>
+            {!noLabel && <label className='text-base font-medium leading-6' htmlFor={id}>{label} <span className='text-red-500'>*</span></label>
+            }
             <input
                 type={type}
                 id={id}
