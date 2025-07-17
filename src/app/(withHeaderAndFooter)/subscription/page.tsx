@@ -1,5 +1,5 @@
 import Button from '@/components/ui/button'
-import SubscriptionCard from '@/components/ui/subscription-card'
+import SubscriptionPlanSection from '@/components/ui/subscription-plan-section'
 import React from 'react'
 
 function page() {
@@ -18,12 +18,7 @@ function page() {
         </div>
 
       </div>
-      <div className='grid grid-cols-2 gap-4 w-full mx-auto max-w-7xl mb-32'>
-        <SubscriptionCard selected={true} title="1 Year - All Device" price="$12.99" subscriptionSpan="month" description="Access to all premium movies and shows." />
-        <SubscriptionCard selected={true} title="1 Year - All Device" price="$12.99" subscriptionSpan="month" description="Access to all premium movies and shows." />
-        <SubscriptionCard selected={true} title="1 Year - All Device" price="$12.99" subscriptionSpan="month" description="Access to all premium movies and shows." />
-        <SubscriptionCard selected={true} title="1 Year - All Device" price="$12.99" subscriptionSpan="month" description="Access to all premium movies and shows." />
-      </div>
+      <SubscriptionPlanSection />
     </>
   )
 }
