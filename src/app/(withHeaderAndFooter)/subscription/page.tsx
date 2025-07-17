@@ -41,11 +41,11 @@ function page() {
             </Button>
           </div>
         </div>
-        <FAQ className='min-w-1/2'>
-          <FaqItem question='What is MoStream?' answer='Mostream is not just a platform; it"s your VIP pass to a universe of captivating content that transcends the ordinary. Say goodbye to the mundane and embrace the extraordinary.' />
-          <FaqItem question='What Devices are Compatible?' answer='Mostream is designed to be compatible with a wide range of devices, including smart TVs, smartphones, tablets, and computers. Whether you prefer watching on the big screen or on the go, Mostream has you covered.' />
-          <FaqItem question='How do I cancel my subscription?' answer='To cancel your subscription, simply log into your account, navigate to the subscription settings, and follow the cancellation instructions. You can also contact our support team for assistance.' />
-          <FaqItem question='What payment methods do you accept?' answer='We accept various payment methods, including credit cards, debit cards, and popular digital wallets. You can choose the payment method that suits you best during the checkout process.' />
+        <FAQ className='w-1/2 max-w-1/2'>
+          <FaqItem componentClasses='rounded-b-none' question='What is MoStream?' answer='Mostream is not just a platform; it"s your VIP pass to a universe of captivating content that transcends the ordinary. Say goodbye to the mundane and embrace the extraordinary.' />
+          <FaqItem componentClasses='rounded-none' question='What Devices are Compatible?' answer='Mostream is designed to be compatible with a wide range of devices, including smart TVs, smartphones, tablets, and computers. Whether you prefer watching on the big screen or on the go, Mostream has you covered.' />
+          <FaqItem componentClasses='rounded-none' question='How do I cancel my subscription?' answer='To cancel your subscription, simply log into your account, navigate to the subscription settings, and follow the cancellation instructions. You can also contact our support team for assistance.' />
+          <FaqItem componentClasses='rounded-t-none' question='What payment methods do you accept?' answer='We accept various payment methods, including credit cards, debit cards, and popular digital wallets. You can choose the payment method that suits you best during the checkout process.' />
         </FAQ>
       </section>
     </>
