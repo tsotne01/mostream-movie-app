@@ -7,7 +7,7 @@ const HeaderCTA = () => {
   const router = useRouter()
   return (
     <div className='gap-4 hidden md:flex'>
-        <Button variant='primary'>Subscribe</Button>
+        <Button onClick={() => router.push('/subscription')} variant='primary'>Subscribe</Button>
         <Button onClick={()=>router.push('/login')} variant='outlined'>Sign In</Button>
     </div>
   )
