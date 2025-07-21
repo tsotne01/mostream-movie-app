@@ -1,6 +1,7 @@
 import Button from '@/components/ui/button'
 import FAQ from '@/components/ui/faq'
 import FaqItem from '@/components/ui/faq-item'
+import SubscriptionPaymentForm from '@/components/ui/subscription-payment-form'
 import SubscriptionPlanSection from '@/components/ui/subscription-plan-section'
 import Image from 'next/image'
 import React from 'react'
@@ -22,6 +23,7 @@ function page() {
 
       </div>
       <SubscriptionPlanSection />
+      {/* <SubscriptionPaymentForm /> */}
       <section className='flex justify-between items-center mx-auto max-w-7xl mb-32'>
         <div className='max-w-1/2 mr-14'>
           <h2 className='font-semibold text-5xl tracking-tight leading-14 mb-4 max-w-3/4'>Frequently Asked Question</h2>
