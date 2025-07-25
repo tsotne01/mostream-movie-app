@@ -23,7 +23,7 @@ type ButtonProps = {
 const Button = ({ variant, type, children, onClick, className, beforeIcon, afterIcon, isActive, ...rest }: ButtonProps) => {
 
     return (
-        <button onClick={onClick} className={`disabled:bg-slate-500/40 ${styles[variant]} ${className} ${isActive && variant == 'secondary' && 'bg-[#242323] border-1 border-[#383838]'} flex
+        <button onClick={onClick} className={`disabled:bg-slate-500/40 ${styles[variant]} ${className} ${isActive && variant == 'secondary' && 'bg-[#242323] border-1 border-[#383838]'} flex justify-center
         active:scale-[0.99] hover:scale-[1.03] 
         `} type={type} {...rest}>
             {beforeIcon && <span className="mr-2">{beforeIcon}</span>}
