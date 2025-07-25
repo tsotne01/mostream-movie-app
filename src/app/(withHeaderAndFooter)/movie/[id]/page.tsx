@@ -1,6 +1,7 @@
 'use client'
 import Button from '@/components/ui/button'
 import Icon from '@/components/ui/Icon'
+import MovieCard from '@/components/ui/movie-card'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import React from 'react'
@@ -48,6 +49,16 @@ const page = () => {
                     <p className='mb-4 text-[#878787] text-2xl font-medium leading-8 tracking-tight'>
                         Journey with us through the cosmic tapestry, where the interplay of science and the human spirit takes center stage. Encounter the characters who dare to defy the boundaries of existence, confronting the existential questions that echo through the vastness of the universe.
                     </p>
+                </div>
+            </section>
+            <section>
+                <div className='max-w-7xl mx-auto'>
+                    <h2 className='text-center text-5xl font-semibold mb-14 leading-14 tracking-tight'>Solaris Synchrony: a Celestial Odyssey of Hope and Harmony Official Trailer</h2>
+                    <div className='flex gap-14'>
+                        {/* <MovieCard className='opacity-100 rounded-none' title='Solarys Synchrony Official Trailer 01' image='/quantum-mirage.jpg' />
+                        <MovieCard className='opacity-100 rounded-none' title='Solarys Synchrony Official Trailer 01' image='/quantum-mirage.jpg' />
+                        <MovieCard className='opacity-100 rounded-none' title='Solarys Synchrony Official Trailer 01' image='/quantum-mirage.jpg' /> */}
+                    </div>
                 </div>
             </section>
         </>
