@@ -6,7 +6,7 @@ type MovieCardProps = {
     isActive?: boolean;
     image: string;
     onClick?: () => void;
-    className: string;
+    className?: string;
 }
 
 const MovieCard = ({ title, isActive = false, image, onClick, className }: MovieCardProps) => {
