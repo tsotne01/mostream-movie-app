@@ -4,7 +4,7 @@ import RegistrationForm from '@/components/ui/registration-form'
 import Image from 'next/image'
 import React from 'react'
 
-const page = () => {
+const page: React.FC = () => {
     return (
         <main className='flex items-center justify-between gap-24 max-w-7xl mx-auto'>
             <div>

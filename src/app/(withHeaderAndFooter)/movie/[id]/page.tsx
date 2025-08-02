@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import React from 'react'
 
-const page = () => {
+const page: React.FC = () => {
     const { id } = useParams<{ id: string }>()
     return (
         <>

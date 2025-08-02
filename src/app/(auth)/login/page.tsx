@@ -3,7 +3,7 @@ import Logo from "@/components/ui/logo";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const page: React.FC = () => {
   return (
     <main className="flex justify-center items-center h-screen relative">
       <Image

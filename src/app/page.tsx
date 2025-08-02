@@ -8,7 +8,7 @@ import MovieCards from '@/components/ui/movie-cards'
 import MovieCategories from '@/components/ui/movie-categories'
 import React from 'react'
 
-const Home = () => {
+const Home = (): React.JSX.Element => {
   return (
     <>
       <Header />
