@@ -3,7 +3,7 @@ import React from 'react'
 import InputField from './input-field'
 import Image from 'next/image'
 import Switch from './switch'
-import Button from './button'
+import Button from './button/button'
 import { useForm } from 'react-hook-form'
 
 function SubscriptionPaymentForm() {

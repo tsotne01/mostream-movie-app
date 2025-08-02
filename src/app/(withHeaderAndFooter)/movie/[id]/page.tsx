@@ -1,5 +1,5 @@
 'use client'
-import Button from '@/components/ui/button'
+import Button from '@/components/ui/button/button'
 import Icon from '@/components/ui/Icon'
 import MovieCard from '@/components/ui/movie-card'
 import Image from 'next/image'

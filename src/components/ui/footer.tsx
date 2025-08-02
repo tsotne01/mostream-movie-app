@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import InputField from './input-field'
-import Button from './button'
+import Button from './button/button'
 import Logo from './logo'
 
 const Footer = () => {

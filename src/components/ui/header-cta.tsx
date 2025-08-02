@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Button from './button'
+import Button from './button/button'
 import { useRouter } from 'next/navigation'
 
 const HeaderCTA = () => {
