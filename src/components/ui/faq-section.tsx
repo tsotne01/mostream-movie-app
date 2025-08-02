@@ -1,6 +1,6 @@
 import React from 'react'
 import FAQ from './faq'
-import FaqItem from './faq-item'
+import FaqItem from './FaqItem/faq-item'
 
 function FaqSection() {
     return (

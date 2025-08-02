@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './button'
+import Button from './button/button'
 import CategoryCard from './category-card'
 
 const MovieCategories = () => {

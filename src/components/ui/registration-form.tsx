@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import InputField from './input-field'
-import Button from './button'
+import Button from './button/button'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import z from 'zod'
