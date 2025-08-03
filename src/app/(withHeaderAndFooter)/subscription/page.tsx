@@ -1,10 +1,10 @@
 import Button from '@/components/ui/shared/button/button'
 import FAQ from '@/components/ui/faq/faq'
-import FaqItem from '@/components/ui/FaqItem/faq-item'
 import SubscriptionPaymentForm from '@/components/ui/subscription/subscription-payment-form'
 import SubscriptionPlanSection from '@/components/ui/subscription/subscription-plan-section'
 import Image from 'next/image'
 import React from 'react'
+import FaqItem from '@/components/ui/faq/FaqItem/faq-item'
 
 function page() {
   return (
