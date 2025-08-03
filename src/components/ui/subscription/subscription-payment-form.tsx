@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import InputField from './input-field'
 import Image from 'next/image'
-import Switch from './switch'
-import Button from './button/button'
+import Switch from '../shared/switch'
+import Button from '../shared/button/button'
 import { useForm } from 'react-hook-form'
+import InputField from '../shared/input-field'
 
 function SubscriptionPaymentForm() {
     const { handleSubmit } = useForm()

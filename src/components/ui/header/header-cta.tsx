@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Button from './button/button'
+import Button from '../shared/button/button'
 import { useRouter } from 'next/navigation'
 import useAuthStatus from '@/hooks/useAuthStatus'
 import useAuth from '@/hooks/useAuth'

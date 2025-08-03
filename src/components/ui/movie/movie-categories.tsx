@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './button/button'
-import CategoryCard from './category-card'
+import Button from '../shared/button/button'
+import CategoryCard from '../category/category-card'
 
 const MovieCategories = () => {
     return (

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import MovieCard from './movie-card'
 import Image from 'next/image';
+import MovieCard from './movie-card';
 
 const CARDS_NUMBER = 4;
 const images = [
@@ -37,7 +37,7 @@ const MovieCards = () => {
             <h3 className='text-center mx-auto font-semibold text-2xl text-white mb-6'>Explore Our Wide Range of Movie Categorise and Genres</h3>
             <div>
                 <Image
-                    src={currentImage}
+                    src={currentImage!}
                     alt="Background"
                     className="absolute inset-0 object-cover w-full h-full -z-10"
                     width={1920}
@@ -49,8 +49,8 @@ const MovieCards = () => {
                         <MovieCard
                             key={index}
                             isActive={activeCard === index + 1}
-                            image={images[index]}
-                            title={titles[index]}
+                            image={images[index]!}
+                            title={titles[index]!}
                             onClick={() => {
                                 setActiveCard(index + 1)
                                 setCurrentImage(images[index]);

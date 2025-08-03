@@ -1,6 +1,6 @@
 import InputField from '@/components/ui/input-field'
-import Logo from '@/components/ui/logo'
-import RegistrationForm from '@/components/ui/registration-form'
+import Logo from '@/components/ui/shared/logo'
+import RegistrationForm from '@/components/ui/register/registration-form'
 import Image from 'next/image'
 import React from 'react'
 

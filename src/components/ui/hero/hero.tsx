@@ -1,7 +1,5 @@
 import React from 'react'
-import Button from './button/button'
-import MovieCards from './movie-cards'
-import MovieCard from './movie-card'
+import Button from '../shared/button/button'
 
 const Hero = () => {
     return (

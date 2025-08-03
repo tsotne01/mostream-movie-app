@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from './nav-bar'
-import Logo from './logo'
+import Logo from '../shared/logo'
 import HeaderCTA from './header-cta'
+import NavBar from '../nav/nav-bar'
 
 const Header = () => {
     return (

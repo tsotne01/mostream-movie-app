@@ -1,5 +1,5 @@
-import LoginForm from "@/components/ui/login-form";
-import Logo from "@/components/ui/logo";
+import LoginForm from "@/components/ui/login/login-form";
+import Logo from "@/components/ui/shared/logo";
 import Image from "next/image";
 import React from "react";
 

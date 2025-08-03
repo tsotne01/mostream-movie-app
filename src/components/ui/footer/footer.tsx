@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import InputField from './input-field'
-import Button from './button/button'
-import Logo from './logo'
+import Button from '../shared/button/button'
+import Logo from '../shared/logo'
+import InputField from '../shared/input-field'
 
 const Footer = () => {
     return (

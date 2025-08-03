@@ -1,12 +1,12 @@
 'use client'
 import React from 'react'
-import InputField from './input-field'
-import Button from './button/button'
+import Button from '../shared/button/button'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import ErrorMessage from './error-message'
+import ErrorMessage from '../shared/error-message'
+import InputField from '../shared/input-field'
 
 
 const RegistrationSchema = z.object({

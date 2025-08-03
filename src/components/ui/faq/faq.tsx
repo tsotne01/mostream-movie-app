@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import FaqItem from './FaqItem/faq-item'
 
 const FAQ = ({ children , className }: { children: ReactNode , className?: string }) => {
     return (

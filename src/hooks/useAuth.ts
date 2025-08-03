@@ -1,10 +1,7 @@
-import { api } from "@/constants/api";
 import { UserContext } from "@/providers/UserProvider";
 import { LoginT } from "@/shared/types/auth";
 import { login, logout } from "@/utils/api";
-import { useContext, useState } from "react"
-
-
+import { useContext } from "react"
 
 
 const useAuth = () => {

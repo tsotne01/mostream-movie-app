@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import CollapseIcon from '../collapse-icon';
-import ExpandIcon from '../expand-icon';
+import CollapseIcon from '../../shared/collapse-icon';
+import ExpandIcon from '../../shared/expand-icon';
+
 
 type FaqItemProps = {
     question: string;

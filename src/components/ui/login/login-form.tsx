@@ -1,13 +1,13 @@
 'use client'
 import React, { useEffect } from 'react'
-import InputField from './input-field'
-import Button from './button/button'
+import Button from '../shared/button/button'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import useAuth from '@/hooks/useAuth'
 import { LoginSchema } from '@/shared/schemas/auth'
 import { useRouter } from 'next/navigation'
+import InputField from '../shared/input-field'
 
 
 
