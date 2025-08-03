@@ -16,8 +16,10 @@ const useAuth = () => {
             const resp = await login(data)
             const user = (await resp?.data)?.user
             if (!user) return;
-            setUser(user);
-            setIsAuthenticated(true);
+            if (setUser) {
+                setUser({ id: user.id, email: user.email, name: user.name });
+                setIsAuthenticated(true);
+            }
         } catch (err) {
             console.log(err);
         }
@@ -27,8 +29,10 @@ const useAuth = () => {
     const handleLogout = async () => {
         try {
             await logout();
-            setIsAuthenticated(false);
-            setUser(null);
+            if (setUser) {
+                setIsAuthenticated(false);
+                setUser(null);
+            }
         } catch (err) {
             console.log(err);
         }

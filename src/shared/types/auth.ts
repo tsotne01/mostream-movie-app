@@ -5,9 +5,9 @@ export type LoginT = z.infer<typeof LoginSchema>
 
 
 export type UserT = {
-    id: string;
-    email: string;
-    name: string;
+    id: string | undefined;
+    email: string | undefined;
+    name: string | undefined;
 }
 
 export type LoginResponseType = {

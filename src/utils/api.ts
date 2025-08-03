@@ -3,9 +3,11 @@ import { LoginResponseType, LoginT } from "@/shared/types/auth";
 
 export const login = async ({ email, password }: LoginT) => {
     try {
-        const resp = await api.post<Promise<LoginResponseType>>("/auth/login", {
-            email,
-            password
+        const resp = await api.POST("/api/auth/login", {
+            body: {
+                email,
+                password
+            }
         })
         const data = await resp;
         return data;
@@ -21,7 +23,9 @@ export const login = async ({ email, password }: LoginT) => {
 
 export const logout = async () => {
     try {
-        const resp = await api.post<Promise<LoginResponseType>>("/auth/logout")
+
+        await api.POST("/api/auth/logout");
+
     } catch (error) {
         console.log("failed to logout")
         if (error instanceof Error) {
